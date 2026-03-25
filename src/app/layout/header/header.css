@@ -1,0 +1,114 @@
+.header-navbar {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.75rem 0;
+}
+
+.navbar-brand {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.brand-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  border-radius: 8px;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(243, 156, 18, 0.3);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.brand-subtitle {
+  font-size: 0.7rem;
+  color: #f39c12;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e0e0 !important;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(243, 156, 18, 0.2);
+  color: #f39c12 !important;
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #f39c12;
+  color: #1a1a2e !important;
+  box-shadow: 0 4px 8px rgba(243, 156, 18, 0.4);
+}
+
+.navbar-nav .nav-link i {
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover i {
+  transform: rotate(10deg);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(243, 156, 18, 0.25);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(243, 156, 18, 0.2);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.75rem 0.5rem !important;
+    margin: 0.25rem 0;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.65rem;
+  }
+}

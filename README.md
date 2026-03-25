@@ -1,5 +1,8 @@
 # Hadeedtraders
 
+https://www.npmjs.com/package/angular-cli-ghpages
+ng deploy --base-href=/angular-hadeed/
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
 
 ## Development server
